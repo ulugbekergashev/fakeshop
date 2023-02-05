@@ -1,0 +1,133 @@
+.swiper {
+  width: 100%;
+  height: 435px;
+  margin-top: 20px;
+  padding-bottom: 35px;
+  &:hover{
+    .swiper-button-prev, .swiper-button-next{
+      visibility: visible;
+    }
+  }
+}
+.swiper-button-prev, .swiper-button-next{
+  padding: 30px 30px;
+  background-color: rgba(255, 255, 255, 0.687);
+  color: black;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+}
+.swiper-pagination-bullet-active {
+    background-color: #DA002B;
+}
+.jewellery-slide{
+  background-image: url(../../img/jewellery.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 400px ;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: end;
+  h2{
+    color: black;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+    margin-right: 70px;
+  }
+
+}
+.electronics-slide{
+  background-image: url(../../img/electronics.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 400px ;
+
+}
+.men-slide{
+  background-image: url(../../img/men.jpg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 400px ;
+  display: flex;
+  align-items: flex-start;
+  text-decoration: none;
+  justify-content: center;
+  h2{
+    color: black;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 20px;
+  }
+
+}
+.women-slide{
+  background-image: url(../../img/women.jpg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 400px ;
+  display: flex;
+  align-items: flex-end;
+  text-decoration: none;
+  justify-content: start;
+  h2{
+    color: black;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    text-align: left;
+  }
+
+}
+@media screen and (max-width:770px) {
+  .swiper{
+    height: 300px;
+  }
+  .electronics-slide, .men-slide,.jewellery-slide, .women-slide{
+    background-size: 100% 300px ;
+  }
+}

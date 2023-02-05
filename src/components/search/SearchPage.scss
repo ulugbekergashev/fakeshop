@@ -1,0 +1,26 @@
+.search-wrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.2rem;
+    padding: 20px 0 30px;
+}
+@media screen and (max-width: 1040px) {
+    .search-wrap {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0.5rem;
+    }
+  }
+  @media screen and (max-width: 720px) {
+    .search-wrap {
+      grid-template-columns: 1fr 1fr;
+      padding: 20px 15px ;
+  
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .search-wrap {
+      grid-template-columns: 1fr;
+      padding: 20px 25px ;
+    }
+  }
+  

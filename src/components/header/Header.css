@@ -1,0 +1,29 @@
+header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  text-decoration: none;
+}
+.logo{
+  text-decoration: none;
+}
+header .header__logo {
+  width: 6rem;
+}
+h1{
+  font-size: 37px;
+  color: black;
+}
+
+@media screen and (max-width: 800px) {
+  
+  h1{
+    font-size: 28px;
+  }
+  header .header__logo {
+    width: 4.5rem;
+  }
+  header{
+    gap: 0;
+  }
+}
